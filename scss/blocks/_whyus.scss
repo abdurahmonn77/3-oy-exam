@@ -1,0 +1,21 @@
+.whyus-bg {
+    clip-path: polygon(0 0, 54% 0, 100% 100%, 0% 100%);
+    width: 769px;
+    height: 453px;
+}
+.whyus-container {
+    background-image: url(../images/big-truck.png);
+    background-size: cover;
+    background-position: center;
+}
+@media (max-width: 768px) {
+    .whyus-bg {
+        width: 600px;
+        height: 383px;
+    }
+    .whyus-container {
+        width: 700px;
+        height: 383px;
+        background-position: left;
+    }
+}

@@ -1,3 +1,34 @@
+/* exo-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Exo";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/exo-v21-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* exo-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Exo";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/exo-v21-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* exo-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Exo";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/exo-v21-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+@font-face {
+  font-display: swap;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/pt-sans-v17-latin-700.woff2") format("woff2");
+}
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +38,54 @@
   scroll-behavior: smooth;
 }
 
-.container {
-  margin: 0 auto;
-  padding: 0 20px;
+body {
+  font-family: "Exo" sans-serif;
+}
+
+p {
+  font-family: "PT Sans", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #363738;
+}
+
+.about-card {
+  border-right: 1px solid #D7D7DD;
+}
+
+.whyus-bg {
+  -webkit-clip-path: polygon(0 0, 54% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 0, 54% 0, 100% 100%, 0% 100%);
+  width: 769px;
+  height: 453px;
+}
+
+.whyus-container {
+  background-image: url(../images/big-truck.png);
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 768px) {
+  .whyus-bg {
+    width: 600px;
+    height: 383px;
+  }
+  .whyus-container {
+    width: 700px;
+    height: 383px;
+    background-position: left;
+  }
+}
+.footer-icon {
+  color: white;
+  transition: color 0.4s;
+}
+
+.footer-icon:hover {
+  color: #e9ab41;
+}
+.footer-icon:hover:last-child:hover {
+  color: rgb(64, 159, 237);
 }/*# sourceMappingURL=main.css.map */

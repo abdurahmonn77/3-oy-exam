@@ -1,0 +1,10 @@
+.footer-icon {
+    color: white;
+    transition: color 0.4s;
+}
+.footer-icon:hover {
+    color: #e9ab41;
+    &:last-child:hover {
+        color: rgb(64, 159, 237);
+    }
+}
